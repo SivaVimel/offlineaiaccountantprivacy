@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Privacy Policy — Offline AI Accountant</title>
+<meta name="description" content="Privacy policy for Offline AI Accountant: no account, no analytics, no servers. Your books never leave your phone.">
+<style>
+  :root{
+    --bg:#FFFFFF; --surface:#F6F8F7; --stroke:#E4E9E7;
+    --text:#101614; --text2:#56635F; --text3:#8A9490;
+    --accent:#0E7C66; --accent2:#0F9A7A;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#0B0F0E; --surface:#141A18; --stroke:#242D2A;
+      --text:#F2F5F4; --text2:#9AA6A2; --text3:#6B7773;
+      --accent:#2DD4A7; --accent2:#5EEAD4;
+    }
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--text);
+    font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing:antialiased}
+  .wrap{max-width:720px;margin:0 auto;padding:56px 20px 96px}
+  .mark{font-weight:800;font-size:15px;letter-spacing:-.2px}
+  .mark span{background:linear-gradient(135deg,var(--accent),var(--accent2));
+    -webkit-background-clip:text;background-clip:text;color:transparent}
+  h1{font-size:34px;line-height:1.15;letter-spacing:-.8px;margin:26px 0 10px}
+  h2{font-size:19px;letter-spacing:-.3px;margin:38px 0 10px}
+  p,li{color:var(--text2)}
+  .lede{font-size:18px;color:var(--text)}
+  .card{background:var(--surface);border:1px solid var(--stroke);border-radius:16px;
+    padding:18px 20px;margin:22px 0}
+  .card strong{color:var(--text)}
+  ul{padding-left:20px}
+  li{margin:6px 0}
+  table{width:100%;border-collapse:collapse;margin:14px 0;font-size:14.5px}
+  th,td{text-align:left;padding:10px 8px;border-bottom:1px solid var(--stroke);vertical-align:top}
+  th{color:var(--text3);font-weight:600;font-size:12.5px;text-transform:uppercase;letter-spacing:.4px}
+  td{color:var(--text2)}
+  .foot{margin-top:56px;padding-top:22px;border-top:1px solid var(--stroke);
+    color:var(--text3);font-size:13.5px}
+  a{color:var(--accent)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="mark">Offline <span>AI Accountant</span></div>
+
+  <h1>Privacy Policy</h1>
+  <p class="lede">Offline AI Accountant does not collect, transmit or store any of your
+  information. There is no account, no analytics and no server for your data to
+  go to.</p>
+  <p>Last updated: 13 September 2026.</p>
+
+  <div class="card">
+    <strong>The short version.</strong>
+    <p style="margin-bottom:0">Your transactions, receipts, invoices, clients and merchants are
+    written to a private folder on your iPhone, encrypted by iOS, and never sent
+    anywhere. The AI that categorises entries and reads receipts runs on the
+    device itself. We cannot see your books, because they are never sent to us.</p>
+  </div>
+
+  <h2>What the app stores, and where</h2>
+  <table>
+    <tr><th>What</th><th>Where</th></tr>
+    <tr><td>Transactions, accounts, categories, rules, merchants, clients, invoices</td>
+        <td>JSON files in the app's private Application Support folder</td></tr>
+    <tr><td>Receipt images and their recognised text</td>
+        <td>The app's private receipts folder</td></tr>
+    <tr><td>Your settings, including confidence thresholds</td>
+        <td>The app's private preferences</td></tr>
+    <tr><td>A change history of edits to your books</td>
+        <td>A local log file, capped in size and exportable</td></tr>
+  </table>
+  <p>All of it is protected with iOS file protection
+  (<em>complete until first user authentication</em>), so it is encrypted at rest.
+  It is included in an iCloud or Finder backup of your phone only if you have
+  backups switched on; that backup is between you and Apple.</p>
+
+  <h2>What leaves the device</h2>
+  <p><strong>By default: nothing.</strong> The app makes no network requests of its own.
+  It works with the phone in airplane mode.</p>
+  <p>There is exactly one optional exception, off unless you switch it on and
+  connect your own API key:</p>
+  <ul>
+    <li><strong>Escalation to a connected AI service.</strong> If you enable this in
+    Settings and add a provider key, then when the on-device model is unsure
+    about a category, the app sends that provider the merchant name and the list
+    of your category names, and nothing else. Amounts, balances, receipt images,
+    client details and your ledger are never sent.</li>
+  </ul>
+  <p>Your API key is stored on your device and is used only to talk to the
+  provider you chose. What that provider does with a request is governed by their
+  privacy policy, not this one.</p>
+
+  <h2>What we collect</h2>
+  <p>Nothing. There is no analytics SDK, no crash reporter, no advertising
+  identifier, no telemetry and no "anonymous usage statistics". The app has no
+  code that reports anything to the developer.</p>
+
+  <h2>Permissions</h2>
+  <table>
+    <tr><th>Permission</th><th>Used for</th></tr>
+    <tr><td>Camera</td><td>Photographing receipts and bills. Images are saved on the device.</td></tr>
+    <tr><td>Photo library</td><td>Choosing a receipt photo you already took. Only the photo you pick is read.</td></tr>
+    <tr><td>Face ID / Touch ID</td><td>The optional app lock. Biometrics are handled by iOS; the app only receives a yes or no.</td></tr>
+    <tr><td>Microphone and speech recognition</td><td>Asking a question about your books out loud. Recognition runs on the device.</td></tr>
+  </table>
+  <p>Each is requested only at the moment you use the feature, and the app works
+  without any of them.</p>
+
+  <h2>Your data is portable, always</h2>
+  <p>Export at any time from More → Export everything: spreadsheet CSVs, a
+  double-entry journal, a complete JSON backup that restores exactly, or a single
+  ZIP containing all of that plus every receipt image and invoice PDF. There is no
+  limit, no paywall and no cloud round trip. Deleting the app deletes the data
+  with it, so export before you do.</p>
+
+  <h2>Children</h2>
+  <p>The app is a business tool and is not directed at children. It collects no
+  information from anyone, of any age.</p>
+
+  <h2>Changes</h2>
+  <p>If a future version ever transmits anything by default, this page will say so
+  plainly and the App Store privacy label will change with it. The date at the top
+  is the last revision.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about this policy: <a href="mailto:sivavimelrajhen@gmail.com">sivavimelrajhen@gmail.com</a>.</p>
+
+  <div class="foot">
+    Offline AI Accountant · Inference by llama.cpp (MIT). Llama 3.2 is licensed
+    under the Llama 3.2 Community License, Copyright © Meta Platforms, Inc. All
+    Rights Reserved.
+  </div>
+</div>
+</body>
+</html>
